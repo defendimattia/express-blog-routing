@@ -10,8 +10,7 @@ router.get("/", (req, res) => {
 
 // show
 router.get("/:id", (req, res) => {
-    res.send(`Post numero ${req.params.id}`)
-})
+    res.json(postsJson[req.params.id])})
 
 // store
 router.post("/", (req, res) => {
