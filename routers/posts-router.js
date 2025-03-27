@@ -22,4 +22,8 @@ router.put("/:id", (req, res) => {
     res.send(`Modifica integrale del post ${req.params.id}`)
 })
 
+// modify
+router.patch("/:id", (req, res) => {
+    res.send(`Modifica parziale del post ${req.params.id}`)})
+
 module.exports = router
