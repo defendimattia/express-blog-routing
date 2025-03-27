@@ -9,4 +9,8 @@ router.get("/:id", (req, res) => {
     res.send(`Post numero ${req.params.id}`)
 })
 
+router.post("/", (req, res) => {
+    res.send("Creazione nuovo post")
+})
+
 module.exports = router
